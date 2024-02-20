@@ -9,41 +9,46 @@
 <body>
     <header class="header">
         <div class="header-content">
-            <h1 class="logo">My Website</h1>
-            <img src="logo.png" alt="Logo" class="logo-image">
+            <h1 class="logo">Moja Strona</h1>
+            <!-- Mobile menu icon -->
+            <div class="menu-icon" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
         </div>
     </header>
 
     <nav class="navbar">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#" onclick="showContent('home')">Home</a></li>
+            <li><a href="#" onclick="showContent('about')">O mnie</a></li>
+            <li><a href="#" onclick="showContent('skills')">Umiejętności</a></li>
+            <li><a href="#" onclick="showContent('contact')">Kontakt</a></li>
         </ul>
     </nav>
 
+    <section class="content" id="home-content">
     <section class="about-me">
         <div class="about-me-content">
-            <h2>About Me</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis ligula sit amet massa efficitur laoreet.</p>
+            <h2>O mnie</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus sapiente dignissimos, sint alias necessitatibus laudantium unde modi optio neque laboriosam quod recusandae temporibus sed placeat. Dolorum sapiente eaque fugit, eveniet aperiam error. Eum maiores autem laborum assumenda sequi, molestiae harum quae ducimus error alias voluptatibus, eos exercitationem temporibus libero inventore!</p>
             <div class="gallery">
-                <img src="image1.jpg" alt="Description of Image 1">
-                <img src="image2.jpg" alt="Description of Image 2">
-                <img src="image3.jpg" alt="Description of Image 3">
+                <img src="image.webp" alt="CS:GO 2 image">
+                <img src="image3.jpg" alt="BMW m3 e92 image">
+                <img src="image2.jpg" alt="Don't Starve Together image">
             </div>
         </div>
     </section>
 
     <section class="skills">
         <div class="skills-content">
-            <h2>Skills</h2>
+            <h2>Umiejętności</h2>
             <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Node.js</li>
+                <li>Jazda samochodem</li>
+                <li>CS:GO 2</li>
+                <li>HTML 5</li>
+                <li>CSS</li>
             </ul>
         </div>
     </section>
@@ -52,11 +57,55 @@
         <div class="footer-content">
             <p>Contact: email@example.com</p>
             <div class="social-links">
-                <a href="#" target="_blank">Facebook</a>
-                <a href="#" target="_blank">Instagram</a>
-                <a href="#" target="_blank">LinkedIn</a>
+                <a href="https://www.facebook.com/marcin.wers.1234/" target="_blank">Facebook</a>
+                <a href="https://www.instagram.com/wers_marcin/" target="_blank">Instagram</a>
+                <a href="https://steamcommunity.com/profiles/76561199160012618/" target="_blank">Steam</a>
             </div>
         </div>
     </footer>
+    </section>
+
+    <section class="content" id="about-content" style="display: none;">
+        <section class="about-me">
+            <div class="about-me-content">
+                <h2>O mnie</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis ligula sit amet massa efficitur laoreet.</p>
+                <div class="gallery">
+                    <img src="image.webp" alt="CS:GO 2 image">
+                    <img src="image3.jpg" alt="BMW m3 e92 image">
+                    <img src="image2.jpg" alt="Don't Starve Together image">
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section class="content" id="skills-content" style="display: none;">
+        <section class="skills">
+            <div class="skills-content">
+                <h2>Umiejętności</h2>
+                <ul>
+                    <li>Jazda samochodem</li>
+                    <li>CS:GO 2</li>
+                    <li>HTML 5</li>
+                    <li>CSS</li>
+                </ul>
+            </div>
+        </section>
+    </section>
+
+    <section class="content" id="contact-content" style="display: none;">
+        <footer class="footer">
+            <div class="footer-content">
+                <p>Contact: email@example.com</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/marcin.wers.1234/" target="_blank">Facebook</a>
+                    <a href="https://www.instagram.com/wers_marcin/" target="_blank">Instagram</a>
+                    <a href="https://steamcommunity.com/profiles/76561199160012618/" target="_blank">Steam</a>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
